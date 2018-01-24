@@ -1,40 +1,40 @@
-var str = "World!"
+//*
 
-var item = {
-  name: "Cheese",
-  price: 5
+function HelloWorld() {
+  return <h1>Hello World!</h1>
 }
-
-var element = <h1> Hello {str}</h1>
-
-//var element = <h1> Hello {item.name} : ${item.price} </h1>
-
-//var element = <div>The Area is: {calculateArea(2,4)}</div>
-
-function calculateArea(x, y) {
-  return x * y
-}
-
-
-var element = <button className ="deleteButton"> Delete </button>;
-
-var product = {name:"apple",stock:0}
-
-var element = <img src ={product.name}></img>
-
-//Do not do this
-//var element = <img src ="{product.imageURL}"></img>
-
-
-var element = (
-  <div>
-        <div>Hello World</div>
-        <div>Hello World</div>
-    </div>
-
-)
 
 ReactDOM.render(
-  element,
+  <HelloWorld/>,
   document.getElementById("root")
 );
+
+//*/
+
+
+/*
+
+function HelloWorld(props) {
+  return <h1>Message: {props.message}</h1>
+}
+
+ReactDOM.render(
+  <HelloWorld message="Hello World!"/>,
+  document.getElementById("root")
+)
+
+*/
+
+
+/**
+
+function HelloWorld(props) {
+  return <h1>Value: {props.numberArray[props.index]} </h1>
+}
+
+ReactDOM.render(
+  <HelloWorld index = "3" numberArray={[1,2,3,4,5]}/>,
+  document.getElementById("root")
+)
+
+//**/
